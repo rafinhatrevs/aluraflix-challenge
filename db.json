@@ -1,0 +1,72 @@
+{
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "FRONT END",
+      "corFundo": "#6BD1FF",
+      "corBorda": "#6BD1FF"
+    },
+    {
+      "id": "2",
+      "nome": "BACK END",
+      "corFundo": "#00C86F",
+      "corBorda": "#00C86F"
+    },
+    {
+      "id": "3",
+      "nome": "MOBILE",
+      "corFundo": "#FFBA05",
+      "corBorda": "#FFBA05"
+    }
+  ],
+  "cards": [
+    {
+      "id": "c4efe174-109c-4f47-afc8-b32b151c0b63",
+      "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+      "categoria": "FRONT END",
+      "imagem": "https://i.ytimg.com/vi_webp/ZY3-MFxVdEw/maxresdefault.webp",
+      "video": "https://www.youtube.com/watch?v=ZY3-MFxVdEw",
+      "descricao": ""
+    },
+    {
+      "id": "845f7aab-1c15-43ed-9599-bde1cf59d360",
+      "titulo": "Como se tornar um desenvolvedor FRONTEND? (Passo a passo / Roadmap)",
+      "categoria": "FRONT END",
+      "imagem": "https://i.ytimg.com/vi/LqXqBgIUbJg/maxresdefault.jpg",
+      "video": "https://www.youtube.com/watch?v=LqXqBgIUbJg",
+      "descricao": ""
+    },
+    {
+      "id": "6ee05197-784e-498c-81ad-6105fb6a3a54",
+      "titulo": "O que estudar para se tornar um Frontend?",
+      "categoria": "FRONT END",
+      "imagem": "https://i.ytimg.com/vi/kh0zXrv__N0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB9s7pmxAgGYKOr8JDEm_i8moBwMA",
+      "video": "https://www.youtube.com/watch?v=kh0zXrv__N0",
+      "descricao": ""
+    },
+    {
+      "titulo": "COMO FUNCIONA UM BACKEND?",
+      "categoria": "BACK END",
+      "imagem": "https://i.ytimg.com/vi/DqtQQhPYAB0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAoAK3ZeGGdQCL07Zo-cEQQBVANhQ",
+      "video": "https://www.youtube.com/watch?v=DqtQQhPYAB0",
+      "descricao": "",
+      "id": "7cc43077-dc39-4840-8bf3-d1f84b597121"
+    },
+    {
+      "titulo": "O que estudar para ser desenvolvedor backend",
+      "categoria": "BACK END",
+      "imagem": "https://i.ytimg.com/vi/3Wo4L2dPS58/maxresdefault.jpg",
+      "video": "https://www.youtube.com/watch?v=3Wo4L2dPS58",
+      "descricao": "",
+      "id": "4ac747cd-df68-41ff-bb91-02fc4d451483"
+    },
+    {
+      "id": "05a6126d-52c3-408b-a606-0505467f3537",
+      "titulo": "O que eu preciso saber para ser um desenvolvedor backend",
+      "categoria": "BACK END",
+      "imagem": "https://i.ytimg.com/vi/f4vdXBJtwjA/maxresdefault.jpg",
+      "video": "https://www.youtube.com/watch?v=f4vdXBJtwjA",
+      "descricao": ""
+    }
+  ]
+}
