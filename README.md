@@ -16,7 +16,7 @@ Praticando React: Challenge AluraFlix
 </p>   
 
 # AluraFlix
-
+Este projeto é o AluraFlix, uma plataforma cujo objetivo é ser uma Netflix da Alura. Com ele, é possível criar cards de vídeos educacionais através de um formulário, organizá-los em categorias como FRONT END, BACK END e MOBILE, editá-los utilizando um formulário em modal e deletá-los quando necessário. Projeto desenvolvido em React como parte de um desafio do programa ONE, ele oferece uma forma prática de gerenciar conteúdos educacionais de forma intuitiva e eficiente.
 
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
 
@@ -24,12 +24,40 @@ Praticando React: Challenge AluraFlix
 
 - **db.json:** Arquivo que simula uma API REST para realizar operações CRUD e simular respostas do servidor.
 
+#### src/:
+- **App.js:**
+- **cardsUtils.js:**
+- **conexaoApi.js:**
+
+  #### componentes/:
+  - **Banner:**
+  - **Botao:**
+  - **Cabecalho:**
+  - **CampoTexto:**
+  - **Card:**
+  - **Categoria:**
+  - **FormModal:**
+  - **FormNovoVideo:**
+  - **ListaSuspensa:**
+  - **Modal:**
+  - **NovoVideo:**
+  - **Opcao:**
+  - **Rodape:**
+
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
 
 ### ⚙️ Funcionalidades
 
 - **Conexão API:**  
   Estabelece uma conexão com a API para realizar operações de leitura e escrita de categorias e cards.
+  
+- **Mostrar Categorias:** `GET` `/categorias`  
+
+- **Criar Card:** `POST` `/cards`  
+
+- **Atualizar Card:** `PUT` `/cards/:id`  
+
+- **Excluir Card:** `DELETE` `/cards/:id`  
   
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
 
@@ -39,6 +67,7 @@ Praticando React: Challenge AluraFlix
 - **CSS:** Mecanismo para adicionar estilos a uma página web.
 - **JavaScript:** Linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.
 - **json-server:** Ferramenta que permite simular uma API REST para desenvolvimento e testes.
+- **React:** Biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.
 
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
 
