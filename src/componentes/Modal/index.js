@@ -13,28 +13,29 @@ const Modal = ({ visivel, card, aoFechar, aoCardEditado, aoLimpar }) => {
             .catch((error) => console.error("Erro ao buscar categorias: ", error))
     }, [])
 
-    if (!visivel) return null
-
-    return (
-        <div className='modal'>
-            <div className='conteudo'>
-                <AiOutlineCloseCircle
-                    className="fechar"
-                    size={45}
-                    onClick={aoFechar}
-                />
-                <FormModal
-                    card={card}
-                    categorias={categorias}
-                    aoCardEditado={(cardEditado) => {
-                        aoCardEditado(cardEditado)
-                        aoFechar()
-                    }}
-                    aoLimpar={aoLimpar}
-                />
+    return visivel ? (
+        <>
+            <div className="overlay-modal" onClick={aoFechar}></div>
+            <div className='modal'>
+                <div className='conteudo'>
+                    <AiOutlineCloseCircle
+                        className="fechar"
+                        size={45}
+                        onClick={aoFechar}
+                    />
+                    <FormModal
+                        card={card}
+                        categorias={categorias}
+                        aoCardEditado={(cardEditado) => {
+                            aoCardEditado(cardEditado)
+                            aoFechar()
+                        }}
+                        aoLimpar={aoLimpar}
+                    />
+                </div>
             </div>
-        </div>
-    )
+        </>
+    ) : null
 }
 
 export default Modal

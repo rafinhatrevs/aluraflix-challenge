@@ -49,7 +49,7 @@ const FormNovoVideo = ({ categorias, aoCardAdicionado }) => {
                     <p>COMPLETE O FORMULÁRIO PARA CRIAR UM NOVO CARD DE VÍDEO.</p>
                 </div>
                 <h3>Criar Card</h3>
-                <div className='bloco-um'>
+                <div className='grupo-horizontal'>
                     <CampoTexto
                         obrigatorio={true}
                         label="Título"
@@ -66,7 +66,7 @@ const FormNovoVideo = ({ categorias, aoCardAdicionado }) => {
                     />
                 </div>
 
-                <div className='bloco-dois'>
+                <div className='grupo-horizontal'>
                     <CampoTexto
                         obrigatorio={true}
                         label="Imagem"

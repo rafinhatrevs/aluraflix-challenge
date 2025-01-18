@@ -36,8 +36,7 @@
     width: 300px;
 }
 
-.form-novo-video .bloco-um,
-.form-novo-video .bloco-dois {
+.form-novo-video .grupo-horizontal {
     display: flex;
     justify-content: space-between;
     align-items: center;

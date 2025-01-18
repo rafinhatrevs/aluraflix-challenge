@@ -12,12 +12,15 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    position: relative;
 }
 
-.banner::before {
-    background-color: rgba(0, 18, 51, 0.56);
-    content: '';
+.banner .overlay-banner {
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
     height: 100%;
     width: 100%;
 }
