@@ -7,12 +7,12 @@ const Card = ({ borda, imagem, nome, aoDeletar, aoEditar }) => {
             <img className='imagem' src={imagem} alt={nome} style={{ borderColor: borda }} />
             <div className='opcoes'>
                 <Opcao
-                    imagem={<img src='/imagens/deletar.png' alt='Icone de deletar.' />}
+                    imagem={<img src='/images/deletar.png' alt='Icone de deletar.' />}
                     aoClicar={aoDeletar}
                     texto='DELETAR'
                 />
                 <Opcao
-                    imagem={<img src='/imagens/editar.png' alt='Icone de editar.' />}
+                    imagem={<img src='/images/editar.png' alt='Icone de editar.' />}
                     aoClicar={aoEditar}
                     texto='EDITAR'
                 />

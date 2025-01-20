@@ -19,7 +19,7 @@ const Cabecalho = () => {
 
     return (
         <header className='cabecalho'>
-            <img src='/imagens/logo.png' alt='Logotipo da AluraFlix.' />
+            <img src='/images/logo.png' alt='Logotipo da AluraFlix.' />
             <nav className='botoes'>
                 <Botao
                     corTexto={paginaHome ? '#2271D1' : '#FFFFFF'}

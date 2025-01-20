@@ -21,20 +21,20 @@
   ],
   "cards": [
     {
-      "id": "c4efe174-109c-4f47-afc8-b32b151c0b63",
       "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
       "categoria": "FRONT END",
       "imagem": "https://i.ytimg.com/vi_webp/ZY3-MFxVdEw/maxresdefault.webp",
       "video": "https://www.youtube.com/watch?v=ZY3-MFxVdEw",
-      "descricao": ""
+      "descricao": "",
+      "id": "c4efe174-109c-4f47-afc8-b32b151c0b63"
     },
     {
-      "id": "845f7aab-1c15-43ed-9599-bde1cf59d360",
       "titulo": "Como se tornar um desenvolvedor FRONTEND? (Passo a passo / Roadmap)",
       "categoria": "FRONT END",
       "imagem": "https://i.ytimg.com/vi/LqXqBgIUbJg/maxresdefault.jpg",
       "video": "https://www.youtube.com/watch?v=LqXqBgIUbJg",
-      "descricao": ""
+      "descricao": "",
+      "id": "845f7aab-1c15-43ed-9599-bde1cf59d360"
     },
     {
       "id": "6ee05197-784e-498c-81ad-6105fb6a3a54",

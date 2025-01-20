@@ -1,6 +1,5 @@
 import './FormModal.css';
 import { useState } from 'react';
-import { atualizarCard } from '../../conexaoApi';
 import Botao from '../Botao';
 import CampoTexto from '../CampoTexto';
 import ListaSuspensa from '../ListaSuspensa';
@@ -24,14 +23,7 @@ const FormModal = ({ card, categorias, aoCardEditado }) => {
             descricao
         }
 
-        try {
-            const cardAtualizado = await atualizarCard(cardEditado)
-
-            aoCardEditado(cardAtualizado)
-
-        } catch (error) {
-            console.log("Erro ao atualizar card: ", error)
-        }
+        aoCardEditado(cardEditado)
     }
 
     const aoLimpar = () => {

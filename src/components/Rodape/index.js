@@ -3,7 +3,7 @@ import './Rodape.css';
 const Rodape = () => {
     return (
         <footer className='rodape'>
-            <img src='/imagens/logo.png' alt='Logotipo da AluraFlix.' />
+            <img src='/images/logo.png' alt='Logotipo da AluraFlix.' />
         </footer>
     )
 }

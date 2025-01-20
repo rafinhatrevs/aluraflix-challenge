@@ -1,6 +1,5 @@
 import './FormNovoVideo.css';
 import { useState } from 'react';
-import { criarCard } from '../../conexaoApi';
 import Botao from '../Botao';
 import CampoTexto from '../CampoTexto';
 import ListaSuspensa from '../ListaSuspensa';
@@ -23,14 +22,7 @@ const FormNovoVideo = ({ categorias, aoCardAdicionado }) => {
             descricao
         }
 
-        try {
-            const cardCriado = await criarCard(novoCard)
-
-            aoCardAdicionado(cardCriado)
-
-        } catch (error) {
-            console.log("Erro ao criar card: ", error)
-        }
+        aoCardAdicionado(novoCard)
     }
 
     const aoLimpar = () => {
