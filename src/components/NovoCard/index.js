@@ -1,10 +1,10 @@
-import './NovoVideo.css';
+import './NovoCard.css';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { mostrarCategorias } from '../../conexaoApi';
-import FormNovoVideo from '../FormNovoVideo';
+import FormNovoCard from '../FormNovoCard';
 
-const NovoVideo = ({ aoAdicionarCard, aoLimpar }) => {
+const NovoCard = ({ aoAdicionarCard, aoLimpar }) => {
     const [categorias, setCategorias] = useState([])
     const navigate = useNavigate()
 
@@ -20,9 +20,9 @@ const NovoVideo = ({ aoAdicionarCard, aoLimpar }) => {
     }
 
     return (
-        <div className='novo-video'>
+        <div className='novo-card'>
             <div className='conteudo'>
-                <FormNovoVideo
+                <FormNovoCard
                     categorias={categorias}
                     aoCardAdicionado={aoCardAdicionado}
                     aoLimpar={aoLimpar}
@@ -32,4 +32,4 @@ const NovoVideo = ({ aoAdicionarCard, aoLimpar }) => {
     )
 }
 
-export default NovoVideo
+export default NovoCard

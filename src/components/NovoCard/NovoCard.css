@@ -1,10 +1,10 @@
-.novo-video {
+.novo-card {
     background-color: #191919;
     padding: 48px;
     display: flex;
     justify-content: center;
 }
 
-.novo-video .conteudo {
+.novo-card .conteudo {
     width: 60%;
 }

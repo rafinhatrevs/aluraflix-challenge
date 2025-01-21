@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { atualizarCard, criarCard, excluirCard, mostrarCategorias } from "../conexaoApi";
+import { CategoriasContext } from "../contexts/CategoriasContext";
 
-const useCards = () => {
-    const [categorias, setCategorias] = useState([])
+export const useCategoriasContext = () => {
+    const { categorias, setCategorias } = useContext(CategoriasContext)
     const [cardSelecionado, setCardSelecionado] = useState(null)
     const [modalVisivel, setModalVisivel] = useState(false)
 
@@ -10,7 +11,7 @@ const useCards = () => {
         mostrarCategorias()
             .then((data) => setCategorias(data))
             .catch((error) => console.error("Erro ao buscar categorias: ", error))
-    }, [])
+    }, [setCategorias])
 
     const adicionarCard = async (novoCard) => {
         try {
@@ -101,4 +102,4 @@ const useCards = () => {
     }
 }
 
-export default useCards
+export default useCategoriasContext

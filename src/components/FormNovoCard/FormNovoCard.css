@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-.form-novo-video .cabecalho-descricao {
+.form-novo-card .cabecalho-descricao {
     text-align: center;
 }
 
@@ -20,7 +20,7 @@
     font-size: 16px;
 }
 
-.form-novo-video h3 {
+.form-novo-card h3 {
     color: #FFFFFF;
     font-family: "Source Sans 3", serif;
     font-optical-sizing: auto;
@@ -29,20 +29,20 @@
     font-size: 32px;
 }
 
-.form-novo-video input,
-.form-novo-video select,
-.form-novo-video textarea {
+.form-novo-card input,
+.form-novo-card select,
+.form-novo-card textarea {
     border: none;
     width: 300px;
 }
 
-.form-novo-video .grupo-horizontal {
+.form-novo-card .grupo-horizontal {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.form-novo-video .botoes-novo-video {
+.form-novo-card .botoes-novo-card {
     margin: 48px 0;
     display: flex;
     gap: 32px;

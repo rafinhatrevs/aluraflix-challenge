@@ -1,10 +1,10 @@
-import './FormNovoVideo.css';
+import './FormNovoCard.css';
 import { useState } from 'react';
 import Botao from '../Botao';
 import CampoTexto from '../CampoTexto';
 import ListaSuspensa from '../ListaSuspensa';
 
-const FormNovoVideo = ({ categorias, aoCardAdicionado }) => {
+const FormNovoCard = ({ categorias, aoCardAdicionado }) => {
     const [titulo, setTitulo] = useState('')
     const [categoria, setCategoria] = useState('')
     const [imagem, setImagem] = useState('')
@@ -34,7 +34,7 @@ const FormNovoVideo = ({ categorias, aoCardAdicionado }) => {
     }
 
     return (
-        <section className="form-novo-video">
+        <section className="form-novo-card">
             <form onSubmit={aoSalvar}>
                 <div className='cabecalho-descricao'>
                     <h2>NOVO VÍDEO</h2>
@@ -84,7 +84,7 @@ const FormNovoVideo = ({ categorias, aoCardAdicionado }) => {
                     tipo="textarea"
                 />
 
-                <div className='botoes-novo-video'>
+                <div className='botoes-novo-card'>
                     <Botao
                         corTexto='#2271D1'
                         corBorda='#2271D1'
@@ -103,4 +103,4 @@ const FormNovoVideo = ({ categorias, aoCardAdicionado }) => {
     )
 }
 
-export default FormNovoVideo
+export default FormNovoCard
