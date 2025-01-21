@@ -6,12 +6,6 @@ import useCategoriasContext from "../hooks/useCategoriasContext";
 const Home = () => {
     const {
         categorias,
-        cardSelecionado,
-        modalVisivel,
-        selecionarCard,
-        editarCard,
-        deletarCard,
-        fecharModal,
     } = useCategoriasContext()
 
     return (
@@ -27,22 +21,10 @@ const Home = () => {
                 <Categoria
                     key={categoria.id}
                     id={categoria.id}
-                    nome={categoria.nome}
-                    corFundo={categoria.corFundo}
-                    corBorda={categoria.corBorda}
-                    cards={categoria.cards || []}
-                    aoEditar={selecionarCard}
-                    aoDeletar={deletarCard}
                 />
             ))}
 
-            <Modal
-                visivel={modalVisivel}
-                aoFechar={fecharModal}
-                card={cardSelecionado}
-                categorias={categorias}
-                aoCardEditado={editarCard}
-            />
+            <Modal />
         </>
     )
 }

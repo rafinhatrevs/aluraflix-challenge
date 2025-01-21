@@ -1,36 +1,36 @@
 import './Modal.css';
-import { useEffect, useState } from 'react';
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import { mostrarCategorias } from '../../conexaoApi';
 import FormModal from '../FormModal';
+import useCategoriasContext from '../../hooks/useCategoriasContext';
 
-const Modal = ({ visivel, card, aoFechar, aoCardEditado, aoLimpar }) => {
-    const [categorias, setCategorias] = useState([])
+const Modal = () => {
+    const {
+        categorias,
+        cardSelecionado,
+        modalVisivel,
+        editarCard,
+        fecharModal,
+    } = useCategoriasContext()
 
-    useEffect(() => {
-        mostrarCategorias()
-            .then((data) => setCategorias(data))
-            .catch((error) => console.error("Erro ao buscar categorias: ", error))
-    }, [])
+    console.log("Modal visível?", modalVisivel);
 
-    return visivel ? (
+    return modalVisivel ? (
         <>
-            <div className="overlay-modal" onClick={aoFechar}></div>
+            <div className="overlay-modal" onClick={fecharModal}></div>
             <div className='modal'>
                 <div className='conteudo'>
                     <AiOutlineCloseCircle
                         className="fechar"
                         size={45}
-                        onClick={aoFechar}
+                        onClick={fecharModal}
                     />
                     <FormModal
-                        card={card}
+                        card={cardSelecionado}
                         categorias={categorias}
                         aoCardEditado={(cardEditado) => {
-                            aoCardEditado(cardEditado)
-                            aoFechar()
+                            editarCard(cardEditado)
+                            fecharModal()
                         }}
-                        aoLimpar={aoLimpar}
                     />
                 </div>
             </div>

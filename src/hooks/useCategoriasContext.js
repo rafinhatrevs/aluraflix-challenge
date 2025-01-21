@@ -1,11 +1,9 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { atualizarCard, criarCard, excluirCard, mostrarCategorias } from "../conexaoApi";
 import { CategoriasContext } from "../contexts/CategoriasContext";
 
 export const useCategoriasContext = () => {
-    const { categorias, setCategorias } = useContext(CategoriasContext)
-    const [cardSelecionado, setCardSelecionado] = useState(null)
-    const [modalVisivel, setModalVisivel] = useState(false)
+    const { categorias, setCategorias, cardSelecionado, setCardSelecionado, modalVisivel, setModalVisivel } = useContext(CategoriasContext)
 
     useEffect(() => {
         mostrarCategorias()

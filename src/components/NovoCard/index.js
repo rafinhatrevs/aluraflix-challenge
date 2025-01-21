@@ -1,21 +1,18 @@
 import './NovoCard.css';
-import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { mostrarCategorias } from '../../conexaoApi';
 import FormNovoCard from '../FormNovoCard';
+import useCategoriasContext from '../../hooks/useCategoriasContext';
 
-const NovoCard = ({ aoAdicionarCard, aoLimpar }) => {
-    const [categorias, setCategorias] = useState([])
+const NovoCard = () => {
     const navigate = useNavigate()
 
-    useEffect(() => {
-        mostrarCategorias()
-            .then((data) => setCategorias(data))
-            .catch((error) => console.error("Erro ao buscar categorias: ", error))
-    }, [])
+    const {
+        categorias,
+        adicionarCard,
+    } = useCategoriasContext()
 
     const aoCardAdicionado = (novoCard) => {
-        aoAdicionarCard(novoCard)
+        adicionarCard(novoCard)
         navigate('/')
     }
 
@@ -25,7 +22,6 @@ const NovoCard = ({ aoAdicionarCard, aoLimpar }) => {
                 <FormNovoCard
                     categorias={categorias}
                     aoCardAdicionado={aoCardAdicionado}
-                    aoLimpar={aoLimpar}
                 />
             </div>
         </div>

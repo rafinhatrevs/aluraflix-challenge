@@ -1,13 +1,22 @@
 import './Categoria.css';
 import Card from '../Card';
+import useCategoriasContext from '../../hooks/useCategoriasContext';
 
-const Categoria = ({ cards = [], corFundo, corBorda, nome, aoEditar, aoDeletar }) => {
+const Categoria = ({ id }) => {
+    const {
+        categorias,
+        selecionarCard,
+        deletarCard,
+    } = useCategoriasContext()
+
+    const categoria = categorias.find((c) => c.id === id)
+
     return (
-        cards.length > 0 ?
+        categoria.cards.length > 0 ?
             <section className='categoria'>
-                <h3 className='titulo' style={{ backgroundColor: corFundo }}>{nome}</h3>
+                <h3 className='titulo' style={{ backgroundColor: categoria.corFundo }}>{categoria.nome}</h3>
                 <div className='cards'>
-                    {cards.map(card => (
+                    {categoria.cards.map(card => (
                         <Card
                             key={card.id}
                             id={card.id}
@@ -15,9 +24,9 @@ const Categoria = ({ cards = [], corFundo, corBorda, nome, aoEditar, aoDeletar }
                             imagem={card.imagem}
                             video={card.video}
                             descricao={card.descricao}
-                            borda={corBorda}
-                            aoEditar={() => aoEditar(card)}
-                            aoDeletar={() => aoDeletar(card.id)}
+                            borda={categoria.corBorda}
+                            aoEditar={() => selecionarCard(card)}
+                            aoDeletar={() => deletarCard(card.id)}
                         />
                     ))}
                 </div>
