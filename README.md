@@ -26,10 +26,9 @@ Este projeto é o AluraFlix, uma plataforma cujo objetivo é ser uma Netflix da 
 
 #### src/:
 - **App.js:**
-- **cardsUtils.js:**
 - **conexaoApi.js:**
 
-  #### componentes/:
+  #### components/:
   - **Banner:**
   - **Botao:**
   - **Cabecalho:**
@@ -43,6 +42,9 @@ Este projeto é o AluraFlix, uma plataforma cujo objetivo é ser uma Netflix da 
   - **NovoVideo:**
   - **Opcao:**
   - **Rodape:**
+ 
+  #### hooks/:
+  - **useCards.js:**
 
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
 
