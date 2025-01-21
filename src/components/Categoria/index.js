@@ -5,8 +5,6 @@ import useCategoriasContext from '../../hooks/useCategoriasContext';
 const Categoria = ({ id }) => {
     const {
         categorias,
-        selecionarCard,
-        deletarCard,
     } = useCategoriasContext()
 
     const categoria = categorias.find((c) => c.id === id)
@@ -20,13 +18,8 @@ const Categoria = ({ id }) => {
                         <Card
                             key={card.id}
                             id={card.id}
-                            nome={card.nome}
-                            imagem={card.imagem}
                             video={card.video}
                             descricao={card.descricao}
-                            borda={categoria.corBorda}
-                            aoEditar={() => selecionarCard(card)}
-                            aoDeletar={() => deletarCard(card.id)}
                         />
                     ))}
                 </div>
