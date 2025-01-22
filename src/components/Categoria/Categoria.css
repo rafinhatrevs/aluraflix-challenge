@@ -24,3 +24,31 @@
     flex-wrap: wrap;
     gap: 32px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .categoria .titulo {
+        margin: 0 auto 48px;
+    }
+
+    .categoria .cards {
+        padding: 0 16px 24px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 16px;
+    }
+
+    .categoria .cards::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .categoria .cards::-webkit-scrollbar-thumb {
+        background-color: #2271D1;
+        border-radius: 8px;
+    }
+
+    .categoria .cards .card {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}

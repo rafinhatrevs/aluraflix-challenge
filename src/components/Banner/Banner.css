@@ -9,7 +9,7 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     position: relative;
@@ -28,35 +28,59 @@
 .banner .info,
 .banner img {
     z-index: 2;
+    width: 100%;
+    max-width: 50%;
+}
+
+.banner .info h1,
+.banner .info h2 {
+    width: 100%;
+    max-width: 50%;
+    color: #F5F5F5;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 32px;
 }
 
 .banner .info h1 {
     background-color: #6BD1FF;
     margin: 0;
     padding: 16px;
-    max-width: 15%;
     border-radius: 15px;
     text-align: center;
-    color: #F5F5F5;
-    font-family: "Roboto", sans-serif;
     font-weight: 800;
-    font-style: normal;
-    font-size: 32px;
 }
 
 .banner .info h2 {
-    color: #F5F5F5;
-    font-family: "Roboto", serif;
     font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
 }
 
 .banner .info p {
-    max-width: 50%;
+    width: 100%;
+    max-width: 80%;
     color: #F5F5F5;
     font-family: "Roboto", serif;
     font-weight: 300;
     font-style: normal;
     font-size: 16px;
+}
+
+.banner img {
+    height: auto;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .banner {
+        padding: 16px;
+    }
+
+    .banner .info h1,
+    .banner .info h2 {
+        font-size: 28px;
+    }
+
+    .banner .info p {
+        font-size: 14px;
+    }
 }

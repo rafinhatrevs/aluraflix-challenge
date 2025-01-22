@@ -6,8 +6,9 @@
 
 .card .imagem {
     height: 250px;
-    width: calc(430px - 4px);
+    width: 100%;
     border: 2px solid;
+    box-sizing: border-box;
 }
 
 .card .opcoes {
