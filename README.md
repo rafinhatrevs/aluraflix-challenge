@@ -61,12 +61,13 @@ Este projeto é o AluraFlix, uma plataforma cujo objetivo é ser uma Netflix da 
   Estabelece uma conexão com a API para realizar operações de leitura e escrita de categorias e cards.
   
 - **Mostrar Categorias:** `GET` `/categorias`  
-
+  Exibe a lista de categorias disponíveis na API.
 - **Criar Card:** `POST` `/cards`  
-
+  Adiciona um novo card à base de dados e exibe dentro de sua categoria.
 - **Atualizar Card:** `PUT` `/cards/:id`  
-
+  Atualiza as informações de um card já existente através de seu id.
 - **Excluir Card:** `DELETE` `/cards/:id`  
+  Remove um card específico da base de dados através de seu id.
   
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
 
@@ -75,8 +76,8 @@ Este projeto é o AluraFlix, uma plataforma cujo objetivo é ser uma Netflix da 
 - **HTML:** Linguagem de marcação utilizada na construção de páginas na web.
 - **CSS:** Mecanismo para adicionar estilos a uma página web.
 - **JavaScript:** Linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.
-- **json-server:** Ferramenta que permite simular uma API REST para desenvolvimento e testes.
 - **React:** Biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.
+- **json-server:** Ferramenta que permite simular uma API REST para desenvolvimento e testes.
 
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
 
