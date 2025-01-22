@@ -12,8 +12,6 @@ const Modal = () => {
         fecharModal,
     } = useCategoriasContext()
 
-    console.log("Modal visível?", modalVisivel);
-
     return modalVisivel ? (
         <>
             <div className="overlay-modal" onClick={fecharModal}></div>
