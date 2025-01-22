@@ -25,33 +25,33 @@ Este projeto é o AluraFlix, uma plataforma cujo objetivo é ser uma Netflix da 
 - **db.json:** Arquivo que simula uma API REST para realizar operações CRUD e simular respostas do servidor.
 
 #### src/:
-- **App.js:**
-- **conexaoApi.js:**
+- **App.js:** Arquivo responsável por definir a estrutura principal da aplicação, configurando o roteamento e os componentes globais.
+- **conexaoApi.js:** Arquivo que gerencia as requisições à API para manipular categorias e cards.
 
   #### components/:
-  - **Banner:**
-  - **Botao:**
-  - **Cabecalho:**
-  - **CampoTexto:**
-  - **Card:**
-  - **Categoria:**
-  - **FormModal:**
-  - **FormNovoCard:**
-  - **ListaSuspensa:**
-  - **Modal:**
-  - **NovoCard:**
-  - **Opcao:**
-  - **Rodape:**
+  - **Banner:** Exibe a imagem, categoria, título e descrição de um vídeo em destaque.
+  - **Botao:** Representa um botão interativo reutilizável.
+  - **Cabecalho:** Contém a logotipo e dois botões responsáveis pela navegação entre páginas.
+  - **CampoTexto:** Componente de entrada de texto para formulários.
+  - **Card:** Exibe a imagem de um vídeo e as opções de edição ou exclusão do mesmo.
+  - **Categoria:** Representa e organiza cards de vídeos por categorias específicas.
+  - **FormModal:** Modal que contém um formulário para edição de vídeo.
+  - **FormNovoCard:** Formulário para adicionar um novo card.
+  - **ListaSuspensa:** Componente de seleção com opções de categorias em formato de dropdown.
+  - **Modal:** Janela sobreposta para exibir o formulário de edição de vídeo.
+  - **NovoCard:** Componente para criar e exibir um novo card.
+  - **Opcao:** Representa uma opção interativa e reutilizável dentro de um botão.
+  - **Rodape:** Exibe a logotipo no final da página.
 
   #### contexts/:
-  - **CategoriasContext.js:**
+  - **CategoriasContext.js:** Define um contexto para compartilhar o estado global relacionado a categorias, card selecionado e visibilidade do modal, permitindo acesso e atualização desses dados em toda a aplicação.
 
   #### hooks/:
-  - **useCategoriasContext.js:**
+  - **useCategoriasContext.js:** Hook responsável por centralizar a lógica e as operações relacionadas a categorias e cards.
  
   #### pages/:
-  - **Home.js:**
-  - **NovoVideo.js:**
+  - **Home.js:** Exibe o banner de destaque, lista as categorias disponíveis usando o contexto, e inclui o componente Modal para interações de edição.
+  - **NovoVideo.js:** Exibe o componente NovoCard para adicionar um novo vídeo através de um formulário.
 
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
 
@@ -61,12 +61,13 @@ Este projeto é o AluraFlix, uma plataforma cujo objetivo é ser uma Netflix da 
   Estabelece uma conexão com a API para realizar operações de leitura e escrita de categorias e cards.
   
 - **Mostrar Categorias:** `GET` `/categorias`  
-
+  Exibe a lista de categorias disponíveis na API.
 - **Criar Card:** `POST` `/cards`  
-
+  Adiciona um novo card à base de dados e exibe dentro de sua categoria.
 - **Atualizar Card:** `PUT` `/cards/:id`  
-
+  Atualiza as informações de um card já existente através de seu id.
 - **Excluir Card:** `DELETE` `/cards/:id`  
+  Remove um card específico da base de dados através de seu id.
   
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
 
@@ -75,8 +76,8 @@ Este projeto é o AluraFlix, uma plataforma cujo objetivo é ser uma Netflix da 
 - **HTML:** Linguagem de marcação utilizada na construção de páginas na web.
 - **CSS:** Mecanismo para adicionar estilos a uma página web.
 - **JavaScript:** Linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.
-- **json-server:** Ferramenta que permite simular uma API REST para desenvolvimento e testes.
 - **React:** Biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.
+- **json-server:** Ferramenta que permite simular uma API REST para desenvolvimento e testes.
 
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="1000">
 
