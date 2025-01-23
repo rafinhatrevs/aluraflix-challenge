@@ -15,22 +15,45 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
-    padding: 48px;
+    max-height: 90%;
     width: 60%;
     border-radius: 15px;
     border: 4px solid #6BD1FF;
+    overflow: auto;
+}
+
+.modal::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+    background-color: #2271D1;
+    border-radius: 8px;
 }
 
 .modal .conteudo {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    padding: 48px;
 }
 
 .fechar {
+    padding: 48px;
     position: absolute;
     right: 0;
     top: 0;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .modal {
+        width: 90%;
+    }
+
+    .modal .conteudo {
+        padding: 32px;
+    }
+
+    .fechar {
+        padding: 32px;
+    }
 }
