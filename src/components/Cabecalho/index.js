@@ -1,5 +1,6 @@
 import './Cabecalho.css';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { AiOutlineHome, AiOutlinePlusCircle } from "react-icons/ai";
 import Botao from '../Botao';
 
 const Cabecalho = () => {
@@ -26,12 +27,18 @@ const Cabecalho = () => {
                     corBorda={paginaHome ? '#2271D1' : '#FFFFFF'}
                     aoClicar={aoClicarHome}
                     texto='HOME'
+                    icone={
+                        <AiOutlineHome size={25} />
+                    }
                 />
                 <Botao
                     corTexto={paginaNovoVideo ? '#2271D1' : '#FFFFFF'}
                     corBorda={paginaNovoVideo ? '#2271D1' : '#FFFFFF'}
                     aoClicar={aoClicarNovoVideo}
                     texto='NOVO VÍDEO'
+                    icone={
+                        <AiOutlinePlusCircle size={25} />
+                    }
                 />
             </nav>
         </header>

@@ -57,3 +57,17 @@
         padding: 32px;
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .modal {
+        width: 90%;
+    }
+
+    .modal .conteudo {
+        padding: 16px;
+    }
+
+    .fechar {
+        padding: 16px;
+    }
+}

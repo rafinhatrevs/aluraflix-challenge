@@ -28,8 +28,11 @@
 .banner .info,
 .banner img {
     z-index: 2;
+}
+
+.banner .info {
     width: 100%;
-    max-width: 50%;
+    max-width: 55%;
 }
 
 .banner .info h1,
@@ -66,8 +69,8 @@
 }
 
 .banner img {
-    height: auto;
-    object-fit: cover;
+    width: 100%;
+    max-width: 45%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -82,5 +85,11 @@
 
     .banner .info p {
         font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .banner {
+        display: none;
     }
 }

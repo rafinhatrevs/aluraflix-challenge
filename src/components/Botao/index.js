@@ -1,6 +1,6 @@
 import './Botao.css';
 
-const Botao = ({ corTexto, corBorda, aoClicar, texto, tipo = 'button' }) => {
+const Botao = ({ corTexto, corBorda, aoClicar, texto, tipo = 'button', icone }) => {
     return (
         <button className='botao'
             style={{
@@ -10,7 +10,8 @@ const Botao = ({ corTexto, corBorda, aoClicar, texto, tipo = 'button' }) => {
             onClick={aoClicar}
             type={tipo}
         >
-            {texto}
+            {icone}
+            <span className='texto'>{texto}</span>
         </button>
     )
 }
